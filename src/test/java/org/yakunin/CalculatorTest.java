@@ -4,20 +4,22 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class CalculatorTest {
+    Calculator calculator = new Calculator();
     @Test
     void sum() {
-        Assertions.assertEquals(15, CalculatorInterface.sum(5,10));
+        Assertions.assertEquals(15, calculator.sum(5,10));
     }
     @Test
-    void dif() {
-        Assertions.assertEquals(5,CalculatorInterface.dif(10,5));
+    void sub() {
+        Assertions.assertEquals(5,calculator.sub(10,5));
     }
     @Test
-    void prod() {
-        Assertions.assertEquals(50, CalculatorInterface.prod(5,10));
+    void mult() {
+
+        Assertions.assertEquals(50, calculator.mult(5,10));
     }
     @Test
     void div() {
-        Assertions.assertEquals(5,CalculatorInterface.div(50,10));
+        Assertions.assertEquals(5,calculator.div(50,10));
     }
 }
